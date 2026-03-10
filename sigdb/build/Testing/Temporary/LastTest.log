@@ -1,0 +1,38 @@
+Start testing: Mar 09 22:51 IST
+----------------------------------------------------------
+1/1 Testing: validate environment
+1/1 Test: validate environment
+Command: "/home/joe/repos/sigdb/sigdb/build/test/tests" "validate environment"
+Directory: /home/joe/repos/sigdb/sigdb/build/test
+"validate environment" start time: Mar 09 22:51 IST
+Output:
+----------------------------------------------------------
+Filters: "validate environment"
+Randomness seeded to: 1819548849
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tests is a Catch2 v3.13.0 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+validate environment
+-------------------------------------------------------------------------------
+/home/joe/repos/sigdb/sigdb/test/tests.cpp:3
+...............................................................................
+
+/home/joe/repos/sigdb/sigdb/test/tests.cpp:4: FAILED:
+  REQUIRE( false )
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"validate environment" end time: Mar 09 22:51 IST
+"validate environment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 09 22:51 IST

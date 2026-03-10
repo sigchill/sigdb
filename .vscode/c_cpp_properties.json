@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/sigdb/include",
+        "${workspaceFolder}/sigdb/vcpkg_installed/x64-linux/include",
+        "${workspaceFolder}/sigdb/**"
+      ],
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "${default}",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "linux-gcc-x64",
+      "compileCommands": "${workspaceFolder}/sigdb/build/compile_commands.json",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}

@@ -37,6 +37,7 @@
 /home/joe/repos/sigdb/sigdb/build/tools/CMakeFiles/test.dir
 /home/joe/repos/sigdb/sigdb/build/tools/CMakeFiles/edit_cache.dir
 /home/joe/repos/sigdb/sigdb/build/tools/CMakeFiles/rebuild_cache.dir
+/home/joe/repos/sigdb/sigdb/build/test/CMakeFiles/tests.dir
 /home/joe/repos/sigdb/sigdb/build/test/CMakeFiles/test.dir
 /home/joe/repos/sigdb/sigdb/build/test/CMakeFiles/edit_cache.dir
 /home/joe/repos/sigdb/sigdb/build/test/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/joe/repos/sigdb/sigdb/build/src",
+  "command": "/usr/bin/c++  -I/home/joe/repos/sigdb/sigdb/include  -o CMakeFiles/libsdb.dir/libsdb.cpp.o -c /home/joe/repos/sigdb/sigdb/src/libsdb.cpp",
+  "file": "/home/joe/repos/sigdb/sigdb/src/libsdb.cpp",
+  "output": "src/CMakeFiles/libsdb.dir/libsdb.cpp.o"
+},
+{
+  "directory": "/home/joe/repos/sigdb/sigdb/build/tools",
+  "command": "/usr/bin/c++  -I/home/joe/repos/sigdb/sigdb/include  -o CMakeFiles/sdb.dir/sdb.cpp.o -c /home/joe/repos/sigdb/sigdb/tools/sdb.cpp",
+  "file": "/home/joe/repos/sigdb/sigdb/tools/sdb.cpp",
+  "output": "tools/CMakeFiles/sdb.dir/sdb.cpp.o"
+},
+{
+  "directory": "/home/joe/repos/sigdb/sigdb/build/test",
+  "command": "/usr/bin/c++  -I/home/joe/repos/sigdb/sigdb/include -isystem /home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/include  -o CMakeFiles/tests.dir/tests.cpp.o -c /home/joe/repos/sigdb/sigdb/test/tests.cpp",
+  "file": "/home/joe/repos/sigdb/sigdb/test/tests.cpp",
+  "output": "test/CMakeFiles/tests.dir/tests.cpp.o"
+}
+]

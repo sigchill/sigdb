@@ -137,11 +137,11 @@ src/clean: src/CMakeFiles/libsdb.dir/clean
 # Directory level rules for directory test
 
 # Recursive "all" directory target.
-test/all:
+test/all: test/CMakeFiles/tests.dir/all
 .PHONY : test/all
 
 # Recursive "codegen" directory target.
-test/codegen:
+test/codegen: test/CMakeFiles/tests.dir/codegen
 .PHONY : test/codegen
 
 # Recursive "preinstall" directory target.
@@ -149,7 +149,7 @@ test/preinstall:
 .PHONY : test/preinstall
 
 # Recursive "clean" directory target.
-test/clean:
+test/clean: test/CMakeFiles/tests.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
@@ -1130,6 +1130,38 @@ tools/CMakeFiles/sdb.dir/codegen:
 tools/CMakeFiles/sdb.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tools/CMakeFiles/sdb.dir/build.make tools/CMakeFiles/sdb.dir/clean
 .PHONY : tools/CMakeFiles/sdb.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/tests.dir
+
+# All Build rule for target.
+test/CMakeFiles/tests.dir/all: src/CMakeFiles/libsdb.dir/all
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joe/repos/sigdb/sigdb/build/CMakeFiles --progress-num=5,6 "Built target tests"
+.PHONY : test/CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joe/repos/sigdb/sigdb/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joe/repos/sigdb/sigdb/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: test/CMakeFiles/tests.dir/rule
+.PHONY : tests
+
+# codegen rule for target.
+test/CMakeFiles/tests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joe/repos/sigdb/sigdb/build/CMakeFiles --progress-num=5,6 "Finished codegen for target tests"
+.PHONY : test/CMakeFiles/tests.dir/codegen
+
+# clean rule for target.
+test/CMakeFiles/tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/clean
+.PHONY : test/CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
