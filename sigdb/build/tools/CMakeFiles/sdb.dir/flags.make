@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/joe/repos/sigdb/sigdb/include
+CXX_INCLUDES = -I/home/joe/repos/sigdb/sigdb/include -isystem /home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include -isystem /home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include/editline
 
 CXX_FLAGS = 
 

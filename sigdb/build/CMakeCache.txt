@@ -223,6 +223,12 @@ MEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Name of the computer/site where compile is being run
 SITE:STRING=fedora
 
@@ -290,6 +296,12 @@ Z_VCPKG_CL:FILEPATH=Z_VCPKG_CL-NOTFOUND
 //The directory which contains the installed libraries for each
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed
+
+//Path to a library.
+pkgcfg_lib_LIBEDIT_edit:FILEPATH=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/libedit.a
+
+//Path to a library.
+pkgcfg_lib_LIBEDIT_ncurses:FILEPATH=/usr/lib64/libncurses.so
 
 //Value Computed by CMake
 sdb_BINARY_DIR:STATIC=/home/joe/repos/sigdb/sigdb/build
@@ -450,12 +462,53 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.3.0()]
+LIBEDIT_CFLAGS:INTERNAL=-I/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include;-I/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include/editline
+LIBEDIT_CFLAGS_I:INTERNAL=
+LIBEDIT_CFLAGS_OTHER:INTERNAL=
+LIBEDIT_FOUND:INTERNAL=1
+LIBEDIT_INCLUDEDIR:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include
+LIBEDIT_INCLUDE_DIRS:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include;/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include/editline
+LIBEDIT_LDFLAGS:INTERNAL=-L/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../lib;-ledit;-lncurses
+LIBEDIT_LDFLAGS_OTHER:INTERNAL=
+LIBEDIT_LIBDIR:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../lib
+LIBEDIT_LIBRARIES:INTERNAL=edit;ncurses
+LIBEDIT_LIBRARY_DIRS:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../lib
+LIBEDIT_LIBS:INTERNAL=
+LIBEDIT_LIBS_L:INTERNAL=
+LIBEDIT_LIBS_OTHER:INTERNAL=
+LIBEDIT_LIBS_PATHS:INTERNAL=
+LIBEDIT_MODULE_NAME:INTERNAL=libedit
+LIBEDIT_PREFIX:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../..
+LIBEDIT_STATIC_CFLAGS:INTERNAL=-I/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include;-I/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include/editline
+LIBEDIT_STATIC_CFLAGS_I:INTERNAL=
+LIBEDIT_STATIC_CFLAGS_OTHER:INTERNAL=
+LIBEDIT_STATIC_INCLUDE_DIRS:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include;/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../include/editline
+LIBEDIT_STATIC_LDFLAGS:INTERNAL=-L/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../lib;-ledit;-lncurses
+LIBEDIT_STATIC_LDFLAGS_OTHER:INTERNAL=
+LIBEDIT_STATIC_LIBDIR:INTERNAL=
+LIBEDIT_STATIC_LIBRARIES:INTERNAL=edit;ncurses
+LIBEDIT_STATIC_LIBRARY_DIRS:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../lib
+LIBEDIT_STATIC_LIBS:INTERNAL=
+LIBEDIT_STATIC_LIBS_L:INTERNAL=
+LIBEDIT_STATIC_LIBS_OTHER:INTERNAL=
+LIBEDIT_STATIC_LIBS_PATHS:INTERNAL=
+LIBEDIT_VERSION:INTERNAL=3.1
+LIBEDIT_libedit_INCLUDEDIR:INTERNAL=
+LIBEDIT_libedit_LIBDIR:INTERNAL=
+LIBEDIT_libedit_PREFIX:INTERNAL=
+LIBEDIT_libedit_VERSION:INTERNAL=
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
 MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VCPKG_VERBOSE
@@ -470,4 +523,11 @@ _CATCH_DISCOVER_TESTS_SCRIPT:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_in
 _CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+__pkg_config_arguments_LIBEDIT:INTERNAL=REQUIRED;IMPORTED_TARGET;libedit
+__pkg_config_checked_LIBEDIT:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_LIBEDIT_edit
+pkgcfg_lib_LIBEDIT_edit-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_LIBEDIT_ncurses
+pkgcfg_lib_LIBEDIT_ncurses-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/home/joe/repos/sigdb/sigdb/build/vcpkg_installed/x64-linux/lib/pkgconfig/../../lib
 

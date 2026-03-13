@@ -4,6 +4,12 @@ sdb: \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/sdb.dir/sdb.cpp.o \
   ../src/libsdb.a \
+  ../vcpkg_installed/x64-linux/lib/libedit.a \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so.6 \
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libtinfo.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -41,6 +47,18 @@ sdb: \
 CMakeFiles/sdb.dir/sdb.cpp.o:
 
 ../src/libsdb.a:
+
+../vcpkg_installed/x64-linux/lib/libedit.a:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so.6:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libtinfo.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

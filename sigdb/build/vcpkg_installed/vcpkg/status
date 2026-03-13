@@ -22,3 +22,11 @@ Abi: 95c30bb772fd92cfe7e8f3c1fa30f2895ed868cf3d875e7a2f485244265a30ba
 Description: A modern, C++-native, test framework for unit-tests, TDD and BDD.
 Status: install ok installed
 
+Package: libedit
+Version: 2024-08-08
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5725ab75af70e2f0cc7f8a6c90c09d22ce2b6eaa2088907b627a3ffbba9e10ec
+Description: A command line editor library that provides generic line editing, history, and tokenization functions, similar to those found in GNU Readline.
+Status: install ok installed
+
